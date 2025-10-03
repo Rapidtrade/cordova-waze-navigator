@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.adaltojunior.cordova.plugin.wazenavigator"
-        version="0.1.1">
+        version="0.1.2">
 
     <name>Waze Navigator</name>
     <description>Plugin to navigate using Waze.</description>
@@ -28,6 +28,10 @@
             <feature name="WazeNavigator">
                 <param name="android-package" value="com.adaltojunior.cordova.plugin.WazeNavigator"/>
             </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/queries">
+            <package android:name="com.waze" />
+            <package android:name="com.google.android.apps.maps" />
         </config-file>
 
         <source-file src="src/android/WazeNavigator.java" target-dir="src/com/adaltojunior/cordova/plugin/" />
