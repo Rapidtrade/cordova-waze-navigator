@@ -1,4 +1,4 @@
-const configIsEmpty = require('./utils/validateConfig');
+// const configIsEmpty = require('./utils/validateConfig');
 
 /*
  * Created by adaltojunior on 6/11/15.
@@ -10,8 +10,8 @@ WazeNavigator = {
         !isNaN(from.lat) &&
         !isNaN(from.lng) &&
         !isNaN(to.lat) &&
-        !isNaN(to.lng) &&
-        !configIsEmpty(navSettings)
+        !isNaN(to.lng) /* &&
+        !configIsEmpty(navSettings) */
       ) {
         cordova.exec(
           function () {
