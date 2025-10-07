@@ -3,6 +3,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.adaltojunior.cordova.plugin.wazenavigator"
         version="0.1.2">
+    <engines>
+        <engine name="cordova" version=">=3.5.2" />
+    </engines>
 
     <name>Waze Navigator</name>
     <description>Plugin to navigate using Waze.</description>
