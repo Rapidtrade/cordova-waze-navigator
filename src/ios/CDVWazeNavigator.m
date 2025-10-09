@@ -12,7 +12,7 @@
 @implementation CDVWazeNavigator
 
 - (void)openByUrl:(NSString *)url {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:nil];
 }
 
 - (void)navigateByWaze:(CDVInvokedUrlCommand *)command {
